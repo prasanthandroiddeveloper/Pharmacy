@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MSearchActivity">
+
+    <!--<AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_plain"
+        android:imeOptions="actionNext"
+        android:paddingStart="7dp"
+        android:maxLines="1"
+        android:inputType="textPersonName"
+        android:hint="Search Medicine Name"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="7dp"/>-->
+
+    <!--<EditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_plain"
+        android:layout_margin="10dp"/>-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/srecylr"
+        android:layout_margin="2dp"
+        tools:listitem="@layout/recycler_shop_names"/>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+[
+    {
+    "id":"1",
+    "name":"Saridon",
+    "price":"3",
+    "shopname":"Jaganatham",
+    "address":"Tiruchanoor",
+    "Kilometer":"15",
+    "description":"includes Darshan,Tour,and Visit Local places"
+    },
+    {
+    "id":"2",
+    "name":"Paracetamol",
+    "price":"4",
+    "shopname":"Apollo",
+    "address":"leelaMahal",
+    "Kilometer":"5",
+    "description":"includes Darshan,Tour,and Visit Local places"
+    },
+    {
+    "id":"3",
+    "name":"Dart",
+    "price":"5",
+    "shopname":"Krishna",
+    "address":"SubbaredyNagar",
+    "Kilometer":"4",
+    "description":"includes Darshan,Tour,and Visit Local places"
+    },
+    {
+    "id":"4",
+    "name":"Coldact",
+    "price":"6",
+    "shopname":"Radha",
+    "address":"Padmavathipuram",
+    "Kilometer":"11",
+    "description":"includes Darshan,Tour,and Visit Local places"
+    },
+    {
+    "id":"5",
+    "name":"Saridon",
+    "price":"3",
+    "shopname":"sairam",
+    "address":"Tiruchanoor",
+    "Kilometer":"15",
+    "description":"includes Darshan,Tour,and Visit Local places"
+    }
+]

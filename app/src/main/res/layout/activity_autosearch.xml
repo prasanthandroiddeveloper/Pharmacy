@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AutosearchActivity">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center" >
+        <AutoCompleteTextView
+            android:id="@+id/searchtv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_rounded"
+            android:paddingStart="7dp"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:paddingEnd="0dp"
+            android:hint="Search Drug Name"
+            android:textColor="#000"
+            android:fontFamily="@font/poppins_regular"
+            android:focusableInTouchMode="true"
+            android:drawableStart="@drawable/search"
+            android:drawablePadding="10dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="0dp"
+            android:drawableLeft="@drawable/search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:gravity="center" >
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Address"
+            android:padding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/buttongrd"
+            android:textColor="@color/whiteTextColor"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header">
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/infollyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/btn_plain"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Medicine MG"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="#037154"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="#FFFFFF"
+                       android:layout_margin="4dp"/>
+                    <TextView
+                        android:id="@+id/mgTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="#E6181818"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="20sp"
+                        android:gravity="center">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/btn_plain"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Usage"
+
+                        android:background="#037154"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="4dp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:layout_marginTop="4dp"/>
+                    <TextView
+                        android:id="@+id/usageTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="10dp"
+                        android:textColor="#E6181818"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/btn_plain"
+                        android:layout_margin="5dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="How To Use"
+                            android:background="#037154"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_margin="4dp"
+                            android:textColor="#FFFFFF"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:layout_marginTop="4dp"/>
+                        <TextView
+                            android:id="@+id/htuTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="#E6181818"
+                            android:textSize="20sp">
+
+                        </TextView>
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/btn_plain"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Side Effects"
+                        android:background="#037154"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="4dp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:layout_marginTop="4dp"/>
+                    <TextView
+                        android:id="@+id/effectsTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="10dp"
+                        android:textColor="#E6181818"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/btn_plain"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Precautions"
+                        android:background="#037154"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="4dp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:layout_marginTop="4dp"/>
+                    <TextView
+                        android:id="@+id/precautionsTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="10dp"
+                        android:textColor="#E6181818"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/btn_plain"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Dosage"
+                        android:background="#037154"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="4dp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:layout_marginTop="4dp"/>
+                    <TextView
+                        android:id="@+id/dosageTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="10dp"
+                        android:textColor="#E6181818"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/btn_plain"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Storage"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:background="#037154"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="4dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="4dp"/>
+                    <TextView
+                        android:id="@+id/storageTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="10dp"
+                        android:textColor="#E6181818"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
